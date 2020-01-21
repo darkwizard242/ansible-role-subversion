@@ -42,7 +42,7 @@ For customizing behavior of role (i.e. installation of latest **subversion** pac
   roles:
     - role: darkwizard242.subversion
       vars:
-        git_desired_state: latest
+        subversion_desired_state: latest
 ```
 
 For customizing behavior of role (i.e. un-installation of **subversion** package) in ansible playbooks.
@@ -52,7 +52,7 @@ For customizing behavior of role (i.e. un-installation of **subversion** package
   roles:
     - role: darkwizard242.subversion
       vars:
-        git_desired_state: absent
+        subversion_desired_state: absent
 ```
 
 ## License
