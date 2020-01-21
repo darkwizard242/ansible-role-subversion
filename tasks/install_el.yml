@@ -1,0 +1,8 @@
+---
+# tasks file for subversion - EL
+
+- name: Installing {{ subversion_app }} on EL systems
+  yum:
+    name: "{{ subversion_app }}"
+    state: "{{ subversion_desired_state }}"
+    update_cache: yes

@@ -1,0 +1,9 @@
+---
+# tasks file for subversion - Debian
+
+- name: Installing {{ subversion_app }} on Debian systems
+  apt:
+    name: "{{ subversion_app }}"
+    state: "{{ subversion_desired_state }}"
+    force_apt_get: yes
+    update_cache: yes
