@@ -1,6 +1,6 @@
 ---
-sudo: required
-
+#sudo: required
+os: linux
 dist: bionic
 
 language: python
@@ -13,7 +13,7 @@ services:
 env:
   global:
     - ROLE_NAME: subversion
-  matrix:
+  jobs:
     - DISTRO: centos-7
     - DISTRO: ubuntu-18.04
     - DISTRO: ubuntu-16.04
