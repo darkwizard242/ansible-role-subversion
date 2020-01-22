@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.com/darkwizard242/ansible-role-subversion.svg?branch=master)](https://travis-ci.com/darkwizard242/ansible-role-subversion) ![Ansible Role](https://img.shields.io/ansible/role/45977?color=dark%20green%20) ![Ansible Role](https://img.shields.io/ansible/role/d/45977?label=role%20downloads) ![Ansible Quality Score](https://img.shields.io/ansible/quality/45977?label=ansible%20quality%20score) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ansible-role-subversion&metric=alert_status)](https://sonarcloud.io/dashboard?id=ansible-role-subversion) ![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/darkwizard242/ansible-role-subversion?label=release) ![GitHub repo size](https://img.shields.io/github/repo-size/darkwizard242/ansible-role-subversion?color=orange&style=flat-square)
 
-# Ansible Role: git
+# Ansible Role: subversion
 
 Role to install (_by default_) `subversion` package or uninstall (_if passed as var_) on **Debian**, **Ubuntu** and **CentOS** systems.
 
