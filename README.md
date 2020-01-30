@@ -12,14 +12,19 @@ None.
 
 Available variables are listed below (located in `defaults/main.yml`):
 
+### Variables list:
+
 ```yaml
 subversion_app: subversion
 subversion_desired_state: present
 ```
 
-Variable `subversion_app`: Defines the app to install i.e. **subversion**
+### Variables table:
 
-Variable `subversion_desired_state`: Defined to dynamically chose whether to install (i.e. either `present` or `latest`) or uninstall (i.e. `absent`) the package.
+Variable                 | Value (default) | Description
+------------------------ | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------
+subversion_app           | subversion      | Defines the app to install i.e. **subversion**
+subversion_desired_state | present         | Defined to dynamically chose whether to install (i.e. either `present` or `latest`) or uninstall (i.e. `absent`) the package. Defaults to `present`.
 
 ## Dependencies
 
