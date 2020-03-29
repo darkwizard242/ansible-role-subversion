@@ -2,7 +2,7 @@
 
 # Ansible Role: subversion
 
-Role to install (_by default_) `subversion` package or uninstall (_if passed as var_) on **Debian**, **Ubuntu** and **CentOS** systems.
+Role to install (_by default_) [subversion](https://subversion.apache.org/) package or uninstall (_if passed as var_) on **Debian**, **Ubuntu** and **CentOS** systems.
 
 ## Requirements
 
@@ -37,7 +37,7 @@ For default behaviour of role (i.e. installation of **subversion** package) in a
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.subversion
+    - darkwizard242.subversion
 ```
 
 For customizing behavior of role (i.e. installation of latest **subversion** package) in ansible playbooks.
@@ -45,9 +45,9 @@ For customizing behavior of role (i.e. installation of latest **subversion** pac
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.subversion
-      vars:
-        subversion_desired_state: latest
+    - darkwizard242.subversion
+  vars:
+    subversion_desired_state: latest
 ```
 
 For customizing behavior of role (i.e. un-installation of **subversion** package) in ansible playbooks.
@@ -55,9 +55,9 @@ For customizing behavior of role (i.e. un-installation of **subversion** package
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.subversion
-      vars:
-        subversion_desired_state: absent
+    - darkwizard242.subversion
+  vars:
+    subversion_desired_state: absent
 ```
 
 ## License
