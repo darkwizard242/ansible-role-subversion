@@ -1,7 +1,7 @@
 ---
-# tasks file for subversion - EL
+# tasks file for subversion - EL Family
 
-- name: Installing {{ subversion_app }} on EL systems
+- name: EL Family | Installing {{ subversion_app }}
   yum:
     name: "{{ subversion_app }}"
     state: "{{ subversion_desired_state }}"

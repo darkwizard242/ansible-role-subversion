@@ -1,7 +1,7 @@
 ---
-# tasks file for subversion - Debian
+# tasks file for subversion - Debian/Ubuntu Family
 
-- name: Installing {{ subversion_app }} on Debian systems
+- name: Debian/Ubuntu Family | Installing {{ subversion_app }}
   apt:
     name: "{{ subversion_app }}"
     state: "{{ subversion_desired_state }}"
