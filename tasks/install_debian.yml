@@ -2,7 +2,7 @@
 # tasks file for subversion - Debian/Ubuntu Family
 
 - name: Debian/Ubuntu Family | Installing {{ subversion_app }}
-  apt:
+  ansible.builtin.apt:
     name: "{{ subversion_app }}"
     state: "{{ subversion_desired_state }}"
     force_apt_get: yes
