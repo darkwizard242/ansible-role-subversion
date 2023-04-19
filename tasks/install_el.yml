@@ -2,7 +2,7 @@
 # tasks file for subversion - EL Family
 
 - name: EL Family | Installing {{ subversion_app }}
-  yum:
+  ansible.builtin.yum:
     name: "{{ subversion_app }}"
     state: "{{ subversion_desired_state }}"
     update_cache: yes
